@@ -1,0 +1,12 @@
+---
+import Grid from "../components/Grid.svelte";
+import Page from "../components/Page.svelte";
+---
+<html>
+  <body>
+    <h1>Grid as its own island (its CSS is under 4 kB, so it gets inlined)</h1>
+    <Grid client:load />
+    <h1>Island that lazily imports a modal containing the same Grid</h1>
+    <Page client:load />
+  </body>
+</html>

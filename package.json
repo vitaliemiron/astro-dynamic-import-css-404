@@ -1,0 +1,15 @@
+{
+  "name": "astro-dynamic-import-css-404",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "astro build && node check-missing.mjs",
+    "build:never": "astro build --config astro.never.mjs && node check-missing.mjs",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "9.0.1",
+    "astro": "7.3.5",
+    "svelte": "5.57.1"
+  }
+}
